@@ -1,0 +1,124 @@
+
+  <!--Basic: auto-select the icon based on the platform -->
+  <ion-icon name="football"></ion-icon>
+
+  <!-- Advanced: explicity set the icon for each platform -->
+  <ion-icon ios="ios-football" md="md-football"></ion-icon>
+  <ion-content class="card-background-page">
+
+    <div padding>
+      <ion-segment [(ngModel)]="pet">
+        <ion-segment-button value="Real madri">
+          Real madri
+        </ion-segment-button>
+        <ion-segment-button value="Barcelona">
+          Barcelona 
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+    
+    <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'Real madri'">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="http://www.imagensparawhats.com/wp-content/uploads/2016/10/Escudo-do-Real-Madrid-em-HD-PNG-3D.png">
+          </ion-thumbnail>
+          <h2>Real madri</h2>
+        </ion-item>
+        <ion-card>
+          <img src="https://www.torcedores.com/content/uploads/2019/02/he12352thumb.jpg"/>
+          <ion-card-content>
+            <ion-card-title>
+              Bale alcança a marca de 100 gols pelo Real Mdrid
+              </ion-card-title>
+            <p>
+              Nada como fazer um gol em um jogo importante, ainda mais contra o rival de sua cidade. Gareth Bale anotou o terceiro gol do Real contra o Atlético de Madrid, em pleno Wanda Metropolitano. 
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+
+        <ion-card>
+          <img src="https://cdn.foxsports.com.br/sites/foxsports-br/files/img/notes/blogpost/vinicius-junior-real-madrid-estreia-foto-1280.jpg?ver=29ca979b-355b-4d41-abb8-29a57fe91f54"/>
+          <ion-card-content>
+            <ion-card-title>
+              Se Vinicius estivesse jogando no Real desde a primeira rodada...
+              </ion-card-title>
+            <p>
+              Ele tem apenas 18 anos, mas já é respeitado como os grandes do futebol. Na quarta-feira (6) ele foi um dos mais vaiados do Camp Nou. E neste sábado (9), o mesmo aconteceu no Wanda Metropolitano. É um dos sinais mais claros do quão forte Vinicius Jr. tem sido nesta temporada.
+            </p>
+          </ion-card-content>
+        </ion-card>
+        
+        <ion-card>
+          <img src="https://images.performgroup.com/di/library/GOAL/ea/7a/karim-benzema-real-madrid-2018-19_1imounrhzkz7x1pidjaq6pzj1o.jpg?t=-867048704&quality=100&h=300"/>
+          <ion-card-content>
+            <ion-card-title>
+              Benzema não treina e vira dúvida para duelo do Real contra o Ajax
+              </ion-card-title>
+            <p>
+              Karim Benzema não treinou junto com o grupo na manhã desta segunda-feira (11)  por conta de dores na área do pescoço, e ficou dentro das instalações para fazer outros exercícios.
+
+              Tal notícia deixou o clube em alerta, já que o atacante francês é um dos jogadores principais da equipe nesta temporada, com 18 gols marcados, e peça importante para o duelo de quarta-feira (13), pelas oitavas de final da Champions League, contra o Ajax.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-list>
+
+
+      
+    
+      <ion-list *ngSwitchCase="'Barcelona'">
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/FCBarcelona.svg/1200px-FCBarcelona.svg.png">
+          </ion-thumbnail>
+          <h2>Barcelona</h2>
+        </ion-item>
+        <ion-card>
+          <img src="https://s.yimg.com/ny/api/res/1.2/kDFzyDmm5Fs5yly_LeHp1g--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/pt-BR/homerun/pt.goal.com/623ae3594950d40015baecda3141f7b7"/>
+          <ion-card-content>
+            <ion-card-title>
+              Valverde: "Messi está bem, 100%"
+              </ion-card-title>
+            <p>
+              Após o empate sem gols com o Athletic Bilbao no último domingo (10), o tércnico Ernesto Valverde conversou com a imprensa e falou sobre a aptidão física de Lionel Messi que, apesar dos rumores indicarem que o argentino não estava 100%, entrou em campo como titular, mas não conseguiu ser decisivo para a equipe catalã.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <img src="https://images.performgroup.com/di/library/GOAL/38/1d/luis-suarez-athletic-club-barcelona-laliga_1jgh4l4ukbv3r14o7qv9whu65x.jpg?t=-652250008&quality=100&w=640&h=360"/>
+          <ion-card-content>
+            <ion-card-title>
+              Barcelona: "Nos faltou comunicação", diz Suárez
+              </ion-card-title>
+            <p>
+              O Barcelona sofreu para empatar sem gols com o Athletic Bilbao, fora de casa, por La Liga, neste domingo (10). A atuação não foi das melhores e, para Luis Suárez, a falta de comunicação foi um dos motivos.
+
+"Nos faltou comunicação. São pequenos detalhes que fazem diferença no campo", disse Suárez, em entrevista ao Movistar.
+            </p>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <img src="https://images.performgroup.com/di/library/GOAL/fa/26/ernesto-valverde-fc-barcelona_iy8bkwyi6gij1lu9suhhcs3n3.jpg?t=-1114945624&quality=100&h=300"/>
+          <ion-card-content>
+            <ion-card-title>
+              Valverde minimiza empate: "Como na semana passada, somos líderes"
+              </ion-card-title>
+            <p>
+              O Barcelona sofreu para empatar sem gols com o Athletic Bilbao, fora de casa, por La Liga, neste domingo (10). A atuação não foi das melhores e o cansaço com o calendário pareceu ter pesado para os Blaugranas, mas o técnico Ernesto Valverde minimizou o resultado.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+
+
+
+      </ion-list>
+    </div>
+
+    
+
+     
